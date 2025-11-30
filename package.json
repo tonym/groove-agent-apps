@@ -1,0 +1,12 @@
+{
+  "name": "groove-agent-apps",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@8.15.6",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

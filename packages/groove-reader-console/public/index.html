@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrooveReader Console</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        margin: 2rem;
+        background: #0f172a;
+        color: #e2e8f0;
+      }
+
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+      }
+
+      button {
+        background: #22d3ee;
+        color: #0f172a;
+        border: none;
+        padding: 0.75rem 1.25rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      pre {
+        background: #0b1220;
+        border: 1px solid #1e293b;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        min-height: 120px;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>GrooveReader Console</h1>
+        <p>
+          This console will connect to a ChatKit workflow to retrieve Groove rules.
+          The placeholder button demonstrates where the call will be initiated.
+        </p>
+        <button id="grok-list-rules" type="button">List all rules</button>
+      </section>
+      <section>
+        <h2>Output</h2>
+        <pre class="groove-reader-output">Waiting for workflow response...</pre>
+      </section>
+    </main>
+    <script type="module" src="./dist/main.js"></script>
+  </body>
+</html>
