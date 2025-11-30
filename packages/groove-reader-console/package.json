@@ -1,0 +1,10 @@
+{
+  "name": "groove-reader-console",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "pnpm run build && pnpm dlx serve public"
+  }
+}

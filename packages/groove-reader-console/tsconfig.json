@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./public/dist",
+    "rootDir": "./src",
+    "moduleDetection": "force",
+    "allowJs": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "public"]
+}
