@@ -4,7 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "start": "pnpm run build && pnpm dlx serve public"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite dev"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1"
   }
 }

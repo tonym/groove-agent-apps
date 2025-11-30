@@ -1,11 +1,10 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "./public/dist",
-    "rootDir": "./src",
+    "moduleResolution": "Bundler",
     "moduleDetection": "force",
-    "allowJs": false
+    "allowJs": false,
+    "types": ["vite/client"]
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "public"]
+  "include": ["src/**/*", "vite.config.ts"]
 }
